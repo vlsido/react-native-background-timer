@@ -1,17 +1,10 @@
 apply plugin: 'com.android.library'
 
-def safeExtGet(prop, fallback) {
-    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
-}
-
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 28)
-    
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 16)
-        targetSdkVersion safeExtGet('targetSdkVersion', 28)
-        versionCode 1
-        versionName "1.0"
+        namespace "com.coslavko.timer"
+        versionCode 2
+        versionName "1.1.0"
     }
 }
 
